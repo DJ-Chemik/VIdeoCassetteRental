@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/cassetts/")
+@RequestMapping("/api/cassetts")
 public class VideoCassetteApi {
 
     private List<VideoCassette> videoCassettes;
@@ -19,7 +19,7 @@ public class VideoCassetteApi {
     public VideoCassetteApi() {
         videoCassettes = new ArrayList<>();
         videoCassettes.add(new VideoCassette( 1L,"Titanic", LocalDate.of(1995,1,1)));
-        videoCassettes.add(new VideoCassette( 1L,"Pulp Fiction", LocalDate.of(1990,2,2)));
+        videoCassettes.add(new VideoCassette( 2L,"Pulp Fiction", LocalDate.of(1990,2,2)));
     }
 
     @GetMapping("/all")
